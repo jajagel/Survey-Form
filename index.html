@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Presidential Preference for 2022 Elections</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to answer
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which of the two views presents your opinion on things and politics?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="student">Liberal</option>
+        <option value="job">Conservative</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Are you registered to vote for the 2022 elections?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+
+    
+    </div>
+
+    <div class="form-group">
+      <p>
+        Who is your preffered presidential candidate?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Isko Moreno</option>
+        <option value="projects">Bongbong Marcos</option>
+        <option value="community">Leni Robredo</option>
+        <option value="openSource">Bato Dela Rosa</option>
+        <option value="ping">Ping Lacson</option>
+        <option value="manny">Manny Pacquiao</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What do you expect from a president?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />A strong vision for the country's future</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />An ability to put their own times in the perspective of history</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Effective communication skills
+</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />The courage to make unpopular decisions</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Crisis management skills</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Character and integrity</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Wise appointments</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />An ability to work with Congress</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
